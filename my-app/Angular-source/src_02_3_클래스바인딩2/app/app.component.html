@@ -1,0 +1,7 @@
+<h1>{{ title }}</h1>
+<input
+  type="text"
+  (focus)="handleEvent(true)"
+  (blur)="handleEvent(false)"
+  [class.input]="flag"
+/>
