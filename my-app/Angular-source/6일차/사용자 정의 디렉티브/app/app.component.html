@@ -1,0 +1,7 @@
+{{ title }} {{ books.length }}권
+<ul>
+  <li *ngFor="let book of books" appRedBorder>
+    <img src="../assets/image/{{ book.img }}" width="100" height="100" />
+    {{ book.name }}
+  </li>
+</ul>

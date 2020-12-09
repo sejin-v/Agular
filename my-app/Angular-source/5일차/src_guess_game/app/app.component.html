@@ -1,0 +1,10 @@
+<h1>{{ title }}</h1>
+<h3>컴퓨터가 제공하는 1~10 사이의 랜덤값을 추측한다</h3>
+예측값: <input type="text" [value]="guess" #kkk />
+<button (click)="ok(kkk.value)">확인</button>
+<button (click)="restart()">재시작</button>
+
+<p *ngIf="devitation &lt; 0">예측값이 큽니다</p>
+<p *ngIf="devitation > 0">예측값이 작습니다</p>
+<p *ngIf="devitation == 0" [class.font-red]="devitation == 0">정답입니다</p>
+시도횟수{{ ngOftries }}

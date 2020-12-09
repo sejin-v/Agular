@@ -1,0 +1,11 @@
+{{ title }}
+
+<!-- 날짜 형식 {{값|date:'y/M/dd'}} -->
+<ul>
+  <li>1:{{ currentDate }}</li>
+  <li>2:{{ currentDate | date }}</li>
+  <li>3.년도 소문자y:{{ currentDate | date: "yy y" }}</li>
+  <li>4.월 대문자 사용:{{ currentDate | date: "MM M dd d" }}</li>
+  <li>5:{{ currentDate | date: "y/MM/dd HH:mm:ss" }}</li>
+  <li>6:{{ currentDate | date: "y년 MM월 dd일 HH:mm:ss" }}</li>
+</ul>
